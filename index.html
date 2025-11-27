@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivate Today</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="top-header">
+        <h1>Motivation</h1>
+        <p class="subtitle">A safe space for strength, healing, and hope</p>
+    </header>
+
+    <section class="quote-box">
+        <h2>✨ Daily Motivation ✨</h2>
+        <p class="quote">
+            "You have survived 100% of your hardest days.  
+            You can survive today, too."
+        </p>
+        <button onclick="newQuote()">New Quote</button>
+    </section>
+
+    <footer>
+        <p>You're not alone. Keep going. ❤️</p>
+    </footer>
+
+    <script>
+        const quotes = [
+            "You are stronger than you think.",
+            "Your story is not over yet.",
+            "Even the darkest night ends with sunrise.",
+            "You matter more than you know.",
+            "One day at a time. One step at a time.",
+            "You deserve rest, love, and peace.",
+            "Don't give up—your future self needs you.",
+        ];
+
+        function newQuote() {
+            const q = document.querySelector(".quote");
+            q.textContent = quotes[Math.floor(Math.random() * quotes.length)];
+        }
+    </script>
+
+</body>
+</html>
